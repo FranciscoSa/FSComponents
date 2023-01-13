@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1B9CACD32970B7BD001543D1 /* FSComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACD22970B7BD001543D1 /* FSComponentsApp.swift */; };
-		1B9CACD52970B7BD001543D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACD42970B7BD001543D1 /* ContentView.swift */; };
 		1B9CACD72970B7BE001543D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9CACD62970B7BE001543D1 /* Assets.xcassets */; };
 		1B9CACDA2970B7BE001543D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9CACD92970B7BE001543D1 /* Preview Assets.xcassets */; };
 		1B9CACE42970B7BE001543D1 /* FSComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACE32970B7BE001543D1 /* FSComponentsTests.swift */; };
 		1B9CACEE2970B7BE001543D1 /* FSComponentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACED2970B7BE001543D1 /* FSComponentsUITests.swift */; };
 		1B9CACF02970B7BE001543D1 /* FSComponentsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACEF2970B7BE001543D1 /* FSComponentsUITestsLaunchTests.swift */; };
+		1B9CAD012970BA73001543D1 /* SimpleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CAD002970BA73001543D1 /* SimpleButtonView.swift */; };
+		1B9CAD032970C060001543D1 /* HomeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CAD022970C060001543D1 /* HomeDemoApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		1B9CACCF2970B7BD001543D1 /* FSComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CACD22970B7BD001543D1 /* FSComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSComponentsApp.swift; sourceTree = "<group>"; };
-		1B9CACD42970B7BD001543D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B9CACD62970B7BE001543D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9CACD92970B7BE001543D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B9CACDF2970B7BE001543D1 /* FSComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		1B9CACE92970B7BE001543D1 /* FSComponentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSComponentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9CACED2970B7BE001543D1 /* FSComponentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSComponentsUITests.swift; sourceTree = "<group>"; };
 		1B9CACEF2970B7BE001543D1 /* FSComponentsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSComponentsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B9CAD002970BA73001543D1 /* SimpleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButtonView.swift; sourceTree = "<group>"; };
+		1B9CAD022970C060001543D1 /* HomeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDemoApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,6 @@
 			children = (
 				1B9CACFD2970B8BF001543D1 /* Components */,
 				1B9CACFC2970B891001543D1 /* Demo */,
-				1B9CACD22970B7BD001543D1 /* FSComponentsApp.swift */,
-				1B9CACD42970B7BD001543D1 /* ContentView.swift */,
 				1B9CACD62970B7BE001543D1 /* Assets.xcassets */,
 				1B9CACD82970B7BE001543D1 /* Preview Content */,
 			);
@@ -132,6 +132,8 @@
 		1B9CACFC2970B891001543D1 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1B9CAD022970C060001543D1 /* HomeDemoApp.swift */,
+				1B9CACD22970B7BD001543D1 /* FSComponentsApp.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -139,8 +141,25 @@
 		1B9CACFD2970B8BF001543D1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B9CACFE2970B9AD001543D1 /* Buttons */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1B9CACFE2970B9AD001543D1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CACFF2970B9C0001543D1 /* SimpleButton */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1B9CACFF2970B9C0001543D1 /* SimpleButton */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CAD002970BA73001543D1 /* SimpleButtonView.swift */,
+			);
+			path = SimpleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9CACD52970B7BD001543D1 /* ContentView.swift in Sources */,
+				1B9CAD012970BA73001543D1 /* SimpleButtonView.swift in Sources */,
+				1B9CAD032970C060001543D1 /* HomeDemoApp.swift in Sources */,
 				1B9CACD32970B7BD001543D1 /* FSComponentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
